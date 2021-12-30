@@ -18,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import model.entities.Department;
 import model.exceptions.ValidationException;
@@ -33,6 +34,8 @@ public class DepartmentFormController implements Initializable {
 	
 	@FXML
 	private TextField txtName;
+	
+	
 	
 	@FXML
 	private Label labelErrorName;
@@ -131,8 +134,6 @@ public class DepartmentFormController implements Initializable {
 		if(fields.contains("name")) {
 			labelErrorName.setText(errors.get("name"));
 		}
-		
-		
 	}
 	
 	
